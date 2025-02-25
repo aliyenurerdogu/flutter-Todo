@@ -50,6 +50,8 @@ class _HomeScreenState extends State<HomeScreen> {
         description: "description",
         isCompleted: true)
   ];
+
+
   @override
   Widget build(BuildContext context) {
     double deviceHeight = MediaQuery.of(context).size.height;
@@ -146,7 +148,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   onPressed: () {
                     //bu fonk. "add new task butonuna basıldıgında calısan fonk."
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const AddNewTaskScreen(),
+                      builder: (context) => const AddNewTaskScreen(
+                        addnewTask:  ,
+                      ),
                     )
                         //builder fonk için arrow func. secilir.tek bir return yapılır
                         );
